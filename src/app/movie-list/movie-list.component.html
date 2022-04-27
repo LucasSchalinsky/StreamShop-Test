@@ -8,7 +8,7 @@
           <img [src]="item.image" />
           <h2 [title]="item.title">{{ item.title }}</h2>
           <p>{{ item.genresFormatted }}</p>
-          <button mat-raised-button (click)="onClick(item)">Comprar</button>
+          <app-button buttonText="Comprar" [movieId]="item.id"></app-button>
         </div>
       </div>
     </div>

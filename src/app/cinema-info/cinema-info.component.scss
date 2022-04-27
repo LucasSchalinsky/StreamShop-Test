@@ -1,8 +1,8 @@
-@import '../../styles.scss';
+@import "../../styles.scss";
 
 @mixin line-width() {
   @media only screen {
-      width: 1280px * 0.98;
+    width: 1280px * 0.98;
   }
   @media only screen and (max-width: 1300px) {
     width: 900px * 0.98;
@@ -11,7 +11,7 @@
     width: 600px * 0.98;
   }
   @media only screen and (max-width: 600px) {
-    width: 100vw * 0.90 * 0.98;
+    width: 100vw * 0.9 * 0.95;
   }
 }
 
@@ -27,22 +27,22 @@
   position: absolute;
 }
 
-.schedules{
-  .room-number{
+.schedules {
+  .room-number {
     font-size: 1rem;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.9);
   }
 
-  .room-type{
+  .room-type {
     margin-left: 5px;
     font-size: 1rem;
     color: #faa20a;
   }
 }
 
-.horario-sessoes{
-  button{
+.horario-sessoes {
+  button {
     background-color: transparent;
     border: 1px solid #376ecc;
     border-radius: 5px;
@@ -54,7 +54,7 @@
     transition: 0.2s;
   }
 
-  button:hover{
+  button:hover {
     background-color: #376ecc;
     color: #fff;
     cursor: pointer;
@@ -89,9 +89,25 @@
   .cinema-address {
     margin-top: -15px;
 
-    p{
+    p {
       font-size: 1rem;
       margin-right: 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .rooms {
+    width: 95%;
+    padding: 2.5%;
+
+    .cinema-address {
+      flex-wrap: wrap;
+      
+
+      p {
+        font-size: 1rem;
+      }
     }
   }
 }

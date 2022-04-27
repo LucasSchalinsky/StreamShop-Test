@@ -22,6 +22,7 @@ import { CinemaInfoComponent } from './cinema-info/cinema-info.component';
 import { RegisterComponent } from './register/register.component';
 import { RegisterConfirmComponent } from './register-confirm/register-confirm.component';
 import { BackButtonComponent } from './back-button/back-button.component';
+import { ButtonComponent } from './button/button.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -41,6 +42,7 @@ const routes: Routes = [
     RegisterComponent,
     RegisterConfirmComponent,
     BackButtonComponent,
+    ButtonComponent,
   ],
   imports: [
     BrowserModule,
