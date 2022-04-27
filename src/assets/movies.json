@@ -1,0 +1,64 @@
+{
+  "list": [
+    {
+      "id": "23345",
+      "title": "007 - Sem Tempo Para Morrer",
+      "image": "https://ingresso-a.akamaihd.net/img/cinema/cartaz/23345-cartaz.jpg",
+      "genres": ["Ação", "Suspense"]
+    },
+    {
+      "id": "23959",
+      "title": "Venom: Tempo de Carnificina",
+      "image": "https://ingresso-a.akamaihd.net/prd/img/movie/venom-tempo-de-carnificina/b0beee24-579e-4514-8a87-90b3d0108fa9.jpg",
+      "genres": ["Ação", "Aventura"]
+    },
+    {
+      "id": "21525",
+      "title": "Marighella",
+      "image": "https://ingresso-a.akamaihd.net/img/cinema/cartaz/21525-cartaz.jpg",
+      "genres": ["Ação", "Drama"]
+    },
+    {
+      "id": "23803",
+      "title": "Eternos",
+      "image": "https://ingresso-a.akamaihd.net/prd/img/movie/eternos/257939a6-73e5-46b4-a429-1a7236563860.jpg",
+      "genres": ["Ação", "Aventura", "Ficção"]
+    },
+    {
+      "id": "24056",
+      "title": "Duna",
+      "image": "https://ingresso-a.akamaihd.net/prd/img/movie/duna/509b75e4-2826-47aa-8a6e-127873685961.jpg",
+      "genres": ["Aventura", "Drama", "Ficção"]
+    },
+    {
+      "id": "24116",
+      "title": "A Família Addams 2 – Pé na Estrada",
+      "image": "https://ingresso-a.akamaihd.net/prd/img/movie/a-familia-addams-2-pe-na-estrada/b46ebe78-9b46-473f-b870-6996e10aa605.jpg",
+      "genres": ["Animação", "Aventura"]
+    },
+    {
+      "id": "24208",
+      "title": "Uma história de família",
+      "image": "https://ingresso-a.akamaihd.net/prd/img/movie/uma-historia-de-familia/1a30db90-155a-4138-b07b-39cef58d97d4.jpg",
+      "genres": ["Drama"]
+    },
+    {
+      "id": "12439",
+      "title": "Matrix",
+      "image": "https://ingresso-a.akamaihd.net/img/cinema/cartaz/12439-cartaz.jpg",
+      "genres": ["Ação", "Ficção"]
+    },
+    {
+      "id": "24725",
+      "title": " A Travessia",
+      "image": "https://ingresso-a.akamaihd.net/prd/img/movie/a-travessia/1f288380-42fc-454e-b2a5-d4b370bfc2d9.jpg",
+      "genres": ["Animação", "Drama"]
+    },
+    {
+      "id": "24689",
+      "title": "8 presidentes, 1 juramento - A História de Um Tempo Presente",
+      "image": "https://ingresso-a.akamaihd.net/prd/img/movie/8-presidentes-1-juramento-a-historia-de-um-tempo-presente/c87e9a79-7a98-4769-a4dd-20a6e4be2d31.jpg",
+      "genres": ["Documentário"]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+<div class="footer-gap">
+  <div class="container">
+    <div>
+      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+        <mat-form-field appearance="outline" class="form-group" color="primary">
+          <mat-label>Nome</mat-label>
+          <input id="name" matInput type="string" formControlName="name" />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="form-group">
+          <mat-label>Email</mat-label>
+          <input id="email" matInput type="email" formControlName="email" />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="form-group">
+          <mat-label>Telefone</mat-label>
+          <input
+            id="cellphone"
+            matInput
+            type="string"
+            formControlName="cellphone"
+            mask="(00) 00000-0000"
+          />
+        </mat-form-field>
+
+        <div class="form-group">
+          <input type="checkbox" formControlName="notifications" />
+          <label for="password">Quero receber notificações</label>
+        </div>
+
+        <div appearance="outline" class="form-group">
+          <input type="checkbox" formControlName="licenseTerms" />
+          <label for="password">Li e aceito os termos de uso</label>
+        </div>
+
+        <button
+          type="submit"
+          class="form-group"
+          [disabled]="registerForm.invalid"
+          (ngSubmit)="onSubmit()"
+        >
+          Finalizar Cadastro
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

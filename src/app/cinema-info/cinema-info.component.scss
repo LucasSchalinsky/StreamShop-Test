@@ -1,0 +1,82 @@
+@use '../../styles.scss';
+
+.cinema-infos::after {
+  content: "";
+  display: block;
+  width: styles.$container-width * 0.98;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.2);
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+}
+
+.schedules{
+  .room-number{
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.9);
+  }
+
+  .room-type{
+    margin-left: 5px;
+    font-size: 1rem;
+    color: #faa20a;
+  }
+}
+
+.horario-sessoes{
+  button{
+    background-color: transparent;
+    border: 1px solid #376ecc;
+    border-radius: 5px;
+    color: #376ecc;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    margin-right: 20px;
+
+    transition: 0.2s;
+  }
+
+  button:hover{
+    background-color: #376ecc;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.rooms {
+  width: 98%;
+  padding: 1%;
+  background-color: #f5f5f5;
+  margin: 25px auto 0 auto;
+
+  .cinema-name {
+    display: flex;
+    align-items: center;
+
+    mat-icon {
+      font-size: 2rem;
+      width: 2rem;
+      height: 2rem;
+      color: #faa20a;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.7);
+      margin-left: 1rem;
+    }
+  }
+
+  .cinema-address {
+    margin-top: -15px;
+
+    p{
+      font-size: 1rem;
+      margin-right: 5px;
+    }
+  }
+}

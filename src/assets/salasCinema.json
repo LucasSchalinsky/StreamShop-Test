@@ -1,0 +1,38 @@
+{
+  "cinemaList": [
+    {
+      "id": "676",
+      "eventId": "23345",
+      "name": "Cinemark Cidade Jardim",
+      "address": "Av. Magalhães de Castro",
+      "addressComplement": "Shopping Cidade Jardim",
+      "rooms": [
+        {
+          "name": "Sala 5",
+          "types": [["VIP", "LEG"]],
+          "sessions": [{ "price": 82.07, "time": "20:10" }]
+        },
+        {
+          "name": "Sala 4",
+          "types": [["LEG"]],
+          "sessions": [{ "price": 62.77, "time": "20:30" }, 
+                       { "price": 62.77, "time": "21:00" }]
+        }
+      ]
+    },
+    {
+      "id": "850",
+      "eventId": "23345",
+      "name": "Kinoplex Vila Olímpia",
+      "address": "Rua Olimpiadas",
+      "addressComplement": "603/604",
+      "rooms": [
+        {
+          "name": "Sala 1",
+          "types": [["2D", "LEG"]],
+          "sessions": [{ "price": 43.32, "time": "18:30" }]
+        }
+      ]
+    }
+  ]
+}

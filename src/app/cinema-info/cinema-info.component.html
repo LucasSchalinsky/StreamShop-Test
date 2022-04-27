@@ -1,0 +1,23 @@
+<div class="rooms">
+  <div class="cinema-infos">
+    <div class="cinema-name display-flex">
+      <mat-icon>favorite_border</mat-icon>
+      <h2>{{ name }}</h2>
+    </div>
+    <div class="cinema-address display-flex">
+      <p>{{ address }},</p>
+      <p>{{ addressComplement }}</p>
+    </div>
+  </div>
+  <div class="schedules" *ngFor="let salas of rooms">
+    <div class="display-flex">
+      <p class="room-number">{{ salas.name }} -</p>
+      <p class="room-type">{{ salas.typesFormatted }}</p>
+    </div>
+    <div class="display-flex">
+      <div *ngFor="let sessoes of salas.sessions" class="horario-sessoes">
+        <button (click)="onClick()">{{ sessoes.time }}</button>
+      </div>
+    </div>
+  </div>
+</div>

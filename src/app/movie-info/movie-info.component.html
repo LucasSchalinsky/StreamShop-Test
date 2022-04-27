@@ -1,0 +1,16 @@
+<div class="footer-gap">
+  <div class="container">
+    <div class="movie-infos">
+      <img [src]="movieInfo.image" />
+      <h1>{{ movieInfo.title }}</h1>
+      <div *ngFor="let cinema of salasDisponiveis" style="width: 100%">
+        <app-cinema-info
+          [name]="cinema.name"
+          [address]="cinema.address"
+          [addressComplement]="cinema.addressComplement"
+          [rooms]="cinema.rooms"
+        ></app-cinema-info>
+      </div>
+    </div>
+  </div>
+</div>

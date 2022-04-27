@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+$container-width: 1280px;
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.container{
+  width: $container-width;
+  margin: 0 auto;
+}
+
+.display-flex{
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.footer-gap{
+  padding-bottom: 50px;
+}
+
+// mat-icon-stepper selected color change 
+::ng-deep .mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
+  background-color: rgba(0,0,0, .8) !important;
+}
+
+//input outline color
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  color: rgba(0,0,0, .5)!important;
+  // opacity: 1!important;
+}
+
+//mat-input focused color
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+  color: rgba(0,0,0, .9)!important;
+}
+
+// mat-input error outline color
+::ng-deep .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick{
+  color: rgba(0,0,0, 0.7) !important;
+  opacity: 0.8!important;
+}
+
+// mat-label normal state style
+::ng-deep .mat-form-field-label {
+  color: rgba(0,0,0,.7)!important;
+  // color: $mainColor!important;
+}
+
+// mat-label focused style
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+  color: red!important;
+}
+
+@media only screen and (max-width: 600px){
+  $container-width: 480px;
+}
