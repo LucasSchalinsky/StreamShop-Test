@@ -18,9 +18,11 @@ export class MovieInfoComponent implements OnInit {
     genres: [],
   };
 
+
   constructor(private router: Router, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
+
     this.salasDisponiveis = require('../../assets/salasCinema.json').cinemaList;
 
     this.route.queryParams.subscribe((params) => {

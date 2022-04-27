@@ -10,6 +10,7 @@ import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms'
 export class RegisterComponent implements OnInit {
 
   registerForm: FormGroup;
+  registerConfirm: boolean = false;
 
   constructor(private formBuilder: FormBuilder) { }
 
@@ -27,7 +28,10 @@ export class RegisterComponent implements OnInit {
   }
 
   onSubmit(){
-    alert('Formulário enviado com sucesso!');
+    this.registerConfirm = true;
+    setTimeout(() => {
+      this.registerConfirm = false;
+    }, 3000);
   }
 
 }

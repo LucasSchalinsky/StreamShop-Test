@@ -1,9 +1,24 @@
-@use '../../styles.scss';
+@import '../../styles.scss';
+
+@mixin line-width() {
+  @media only screen {
+      width: 1280px * 0.98;
+  }
+  @media only screen and (max-width: 1300px) {
+    width: 900px * 0.98;
+  }
+  @media only screen and (max-width: 900px) {
+    width: 600px * 0.98;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 100vw * 0.90 * 0.98;
+  }
+}
 
 .cinema-infos::after {
   content: "";
+  @include line-width;
   display: block;
-  width: styles.$container-width * 0.98;
   height: 2px;
   background: rgba(0, 0, 0, 0.2);
   right: 0;
@@ -50,7 +65,7 @@
   width: 98%;
   padding: 1%;
   background-color: #f5f5f5;
-  margin: 25px auto 0 auto;
+  margin: 0 auto 25px auto;
 
   .cinema-name {
     display: flex;

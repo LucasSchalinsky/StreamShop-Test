@@ -1,12 +1,15 @@
-<app-search-bar></app-search-bar>
-<div class="movie-container footer-gap">
-  <div class="movie-list">
-    <div *ngFor="let item of list">
-      <div class="movie-item">
-        <img [src]="item.image" />
-        <h2 [title]="item.title">{{ item.title }}</h2>
-        <p>{{ item.genresFormatted }}</p>
-        <button mat-raised-button (click)="onClick(item)">Comprar</button>
+<app-back-button [isHome]="true"></app-back-button>
+<div class="content-height">
+  <app-search-bar></app-search-bar>
+  <div class="movie-container footer-gap">
+    <div class="movie-list">
+      <div *ngFor="let item of list">
+        <div class="movie-item">
+          <img [src]="item.image" />
+          <h2 [title]="item.title">{{ item.title }}</h2>
+          <p>{{ item.genresFormatted }}</p>
+          <button mat-raised-button (click)="onClick(item)">Comprar</button>
+        </div>
       </div>
     </div>
   </div>

@@ -1,35 +1,34 @@
-$header-height: 80px;
+@use "../../styles";
 
-.header{
+.header {
   position: fixed;
   width: 100%;
   background-color: black;
-  height: $header-height;
+  z-index: 9999;
+  height: styles.$header-height;
 }
 
-.header-container{
-  width : 100%;
+.header-container {
+  width: 100%;
   display: grid;
   place-items: center;
   height: 100%;
 
-  img{
-    height: $header-height;
-  }
-
-  mat-icon{
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    width: 40px;
-    height: 40px;
-
-    font-size: 40px;
-    color: white;
+  img {
+    height: styles.$header-height;
   }
 }
 
-#header-gap{
-  height: $header-height;
+#header-gap {
+  height: styles.$header-height;
   width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-container {
+    img {
+      height: auto;
+      width: 240px;
+    }
+  }
 }

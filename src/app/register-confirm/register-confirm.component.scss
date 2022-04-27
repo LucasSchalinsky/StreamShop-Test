@@ -1,0 +1,37 @@
+.register-content{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+
+  div{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0.5rem 3rem;
+    border-radius: 10px;
+
+    p{
+      text-align: center;
+      font-size: 1rem;
+      color: white;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .register-content{
+    div{
+      width: 70%;
+      padding: 2.5% 10%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+}
+  

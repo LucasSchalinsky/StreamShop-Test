@@ -1,15 +1,19 @@
-<div class="footer-gap">
+<app-back-button [isHome]="false"></app-back-button>
+
+<div class="content-height">
   <div class="container">
     <div class="movie-infos">
       <img [src]="movieInfo.image" />
       <h1>{{ movieInfo.title }}</h1>
-      <div *ngFor="let cinema of salasDisponiveis" style="width: 100%">
-        <app-cinema-info
-          [name]="cinema.name"
-          [address]="cinema.address"
-          [addressComplement]="cinema.addressComplement"
-          [rooms]="cinema.rooms"
-        ></app-cinema-info>
+      <div style="margin-top: 25px; width: 100%">
+        <div *ngFor="let cinema of salasDisponiveis">
+          <app-cinema-info
+            [name]="cinema.name"
+            [address]="cinema.address"
+            [addressComplement]="cinema.addressComplement"
+            [rooms]="cinema.rooms"
+          ></app-cinema-info>
+        </div>
       </div>
     </div>
   </div>

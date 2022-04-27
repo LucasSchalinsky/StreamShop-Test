@@ -10,16 +10,18 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 import { NgxMaskModule } from 'ngx-mask';
 
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { MovieInfoComponent } from './movie-info/movie-info.component';
 import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { CinemaInfoComponent } from './cinema-info/cinema-info.component';
 import { RegisterComponent } from './register/register.component';
+import { RegisterConfirmComponent } from './register-confirm/register-confirm.component';
+import { BackButtonComponent } from './back-button/back-button.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -34,10 +36,11 @@ const routes: Routes = [
     MovieListComponent,
     MovieInfoComponent,
     HeaderComponent,
-    FooterComponent,
     SearchBarComponent,
     CinemaInfoComponent,
     RegisterComponent,
+    RegisterConfirmComponent,
+    BackButtonComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,6 +56,7 @@ const routes: Routes = [
     }),
     MatFormFieldModule,
     MatInputModule,
+    MatCheckboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

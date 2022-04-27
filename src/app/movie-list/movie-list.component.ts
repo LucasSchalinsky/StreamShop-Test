@@ -9,7 +9,6 @@ import { Router } from '@angular/router';
 export class MovieListComponent implements OnInit {
   list:any;
 
-  // fruits.join(" - ");
   ngOnInit(): void {
     this.list = require('../../assets/movies.json').list;
 

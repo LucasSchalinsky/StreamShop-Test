@@ -1,9 +1,67 @@
-.form-group{
+.content-grid{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  button{
+    margin: 25px 0;
+  }
+}
+
+.form-group {
   width: 100%;
   padding-top: 20px;
 }
 
-.mat-form-field{
+.mat-form-field {
   margin-bottom: -20px;
 }
 
+::ng-deep .mat-checkbox-inner-container{
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.register-checkbox-content {
+  display: flex;
+  align-items: center;
+
+  input {
+    width: 20px;
+    height: 20px;
+  }
+
+  label{
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+}
+
+.submit-button{
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.submit-button:disabled{
+  opacity: 0.2;
+}
+
+//mat-input focused color
+::ng-deep.mat-form-field-appearance-outline.mat-focused.mat-form-field-outline-thick {
+  color: rgba(0, 0, 0, 0.9) !important;
+}
+
+// mat-label normal state style
+::ng-deep .mat-form-field-label {
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+
+// mat-label focused style
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+  color: rgba(0, 0, 0, 0.7) !important;
+}
